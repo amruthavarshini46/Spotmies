@@ -27,8 +27,9 @@ This means no large data files are needed, and anyone can run the project on the
 4. NumPy and Pandas for data handling
 5. Matplotlib for visualization
 
+
+# Project Structure
 ```
-Project Structure
 
 ├── data_generation.py        # Generates synthetic dataset
 ├── sklearn_kmeans.py         # scikit-learn k-means implementation
