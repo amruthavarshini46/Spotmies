@@ -27,18 +27,19 @@ This means no large data files are needed, and anyone can run the project on the
 4. NumPy and Pandas for data handling
 5. Matplotlib for visualization
 
-# Project Structure :
-
-├── data_generation.py                # Generates synthetic dataset
-├── sklearn_kmeans.py                 # scikit-learn k-means implementation
-├── dask_kmeans.py                    # Dask-based k-means implementation
-├── Performance_benchmark.py          # Performance comparison script
-├── visualize.py                      # Cluster visualization
-├── run_local.py                      # Local execution using Dask
-├── run_cluster.py                    # Cluster-aware execution
-└── README.md
+Project Structure
+│
+├── data_generation.py        # Generates synthetic dataset
+├── sklearn_kmeans.py         # scikit-learn k-means implementation
+├── dask_kmeans.py            # Dask-based k-means implementation
+├── Performance_benchmark.py  # Performance comparison script
+├── visualize.py              # Cluster visualization
+├── run_local.py              # Local execution using Dask
+├── run_cluster.py            # Cluster-aware execution
+└── README.md                 # Project documentation
 
 # Setup Instructions
 Step 1: Create a virtual environment
   i havent
    
+
