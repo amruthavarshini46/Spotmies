@@ -14,7 +14,7 @@
 
 ---
 
-## Objectives
+# Objectives
 
 * Implement scalable k-means clustering using Dask
 * Generate a synthetic dataset with a large number of samples
@@ -24,7 +24,7 @@
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 * Python
 * Dask & Dask-ML (parallel computation)
@@ -34,7 +34,7 @@
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 .
@@ -50,15 +50,15 @@
 
 ---
 
-## Setup Instructions
+# Setup Instructions
 
-### Step 1: Create a virtual environment
+## Step 1: Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-### Step 2: Activate the environment
+## Step 2: Activate the environment
 
 **Windows (PowerShell)**
 
@@ -66,7 +66,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-### Step 3: Install dependencies
+## Step 3: Install dependencies
 
 ```bash
 pip install dask[complete] dask-ml scikit-learn numpy pandas matplotlib
@@ -74,7 +74,7 @@ pip install dask[complete] dask-ml scikit-learn numpy pandas matplotlib
 
 ---
 
-## Data Generation
+# Data Generation
 
 The dataset is generated programmatically using **Dask arrays** with:
 
@@ -86,9 +86,9 @@ This approach avoids storing large data files and ensures reproducibility on any
 
 ---
 
-## How to Run the Project
+# How to Run the Project
 
-### 1. Run Locally
+## 1. Run Locally
 
 Runs Dask on the local machine using available CPU cores.
 
@@ -105,7 +105,7 @@ This will:
 
 ---
 
-### 2. Performance Benchmark
+## 2. Performance Benchmark
 
 Compares execution time of **scikit-learn k-means** and **Dask k-means** on the same dataset.
 
@@ -117,7 +117,7 @@ The output shows execution time for both approaches in tabular form and a compar
 
 ---
 
-### 3. Run on a Dask Cluster (Optional)
+## 3. Run on a Dask Cluster (Optional)
 
 This script attempts to connect to a Dask cluster.
 If no cluster is available, it automatically falls back to local execution.
@@ -128,7 +128,7 @@ python run_cluster.py
 
 ---
 
-## Visualization
+# Visualization
 
 Cluster results are visualized using **Matplotlib**.
 
@@ -140,7 +140,7 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-## Results and Observations
+# Results and Observations
 
 * scikit-learn performs well on smaller datasets
 * Dask enables parallel execution and scalability
@@ -148,7 +148,7 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-## Key Notes
+# Key Notes
 
 * No raw dataset files are included
 * Data is generated dynamically at runtime
@@ -157,26 +157,10 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-## Conclusion
+# Conclusion
 
 This project demonstrates how **Dask** can be used to scale traditional machine learning algorithms like **k-means clustering**.
 By leveraging parallel and distributed computing, Dask enables efficient processing of large datasets while maintaining clean, reusable, and reproducible code.
 
 ---
-
-✅ This README is:
-
-* Easy to understand
-* Beginner-friendly
-* GitHub-ready
-* Company-submission appropriate
-
-If you want, I can also:
-
-* Shorten it to **1 page**
-* Add **screenshots** section
-* Improve it for **resume / interview explanation**
-* Review your **GitHub repo before final submission**
-
-Just tell me 👍
 
