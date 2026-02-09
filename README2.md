@@ -1,20 +1,16 @@
-Here is a **clean, well-formatted, easy-to-understand README.md** that you can **directly upload to GitHub**.
-I’ve structured it properly using headings, bullets, and code blocks so **any viewer can understand and copy commands easily**.
-
-You can **copy–paste everything below as `README.md`** 👇
 
 ---
 
 # Scalable K-Means Clustering using Dask
 
-## Project Overview
+# Project Overview
 
-This project demonstrates how **k-means clustering** can be scaled using **Dask** to efficiently process large datasets.
-Instead of relying on a single-machine approach, Dask enables **parallel and distributed execution**, making it suitable for handling larger data sizes.
+> This project shows how k-means clustering can be applied to large datasets using Dask. Normally, k-means runs on a single machine, which can become slow or inefficient as the dataset size increases. Dask addresses this limitation by enabling parallel computation across multiple CPU cores or machines, improving performance for large-scale data processing.
+>
+> In this project, k-means clustering is implemented using both scikit-learn and Dask, and their performance is compared to highlight the scalability benefits of Dask. The project also includes visualizations of the clusters to make the results easy to understand.
+>
+> To keep the project simple and easy to run, the dataset is generated automatically at runtime. This removes the need for large data files and allows anyone to run the project on their system without additional setup.
 
-The project compares the performance of **Dask-based k-means** with **scikit-learn k-means** and visualizes the clustering results.
-
-To keep the project lightweight and reproducible, the dataset is **generated dynamically at runtime**, and no large data files are included.
 
 ---
 
