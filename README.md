@@ -40,9 +40,19 @@ This means no large data files are needed, and anyone can run the project on the
 ├── run_cluster.py            # Cluster-aware execution
 └── README.md                 # Project documentation
 ```
-# Setup Instructions
-Step 1: Create a virtual environment
-  i havent
-   
+# Setup Instructions :
+Step 1: Create virtual environment
+``` bash 
+python -m venv .venv
+```
+Step 2: Activate virtual environment
+``` bash 
+.venv\Scripts\Activate.ps1
+```
+Step 3: Install dependencies
+``` bash
+pip install dask[complete] dask-ml scikit-learn numpy pandas matplotlib
+```
+
 
 
