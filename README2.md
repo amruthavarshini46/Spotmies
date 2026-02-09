@@ -3,7 +3,7 @@
 
 # Scalable K-Means Clustering using Dask
 
-#1. Project Overview
+# 1. Project Overview
 
 > This project shows how k-means clustering can be applied to large datasets using Dask. Normally, k-means runs on a single machine, which can become slow or inefficient as the dataset size increases. Dask addresses this limitation by enabling parallel computation across multiple CPU cores or machines, improving performance for large-scale data processing.
 >
@@ -14,7 +14,7 @@
 
 ---
 
-#2. Objectives
+# 2. Objectives
 
 * Implement scalable k-means clustering using Dask
 * Generate a synthetic dataset with a large number of samples
@@ -24,7 +24,7 @@
 
 ---
 
-#3. Technologies Used
+# 3. Technologies Used
 
 * Python
 * Dask & Dask-ML (parallel computation)
@@ -34,7 +34,7 @@
 
 ---
 
-#4. Project Structure
+# 4. Project Structure
 
 ```text
 
@@ -50,7 +50,7 @@
 
 ---
 
-#5. Setup Instructions
+# 5. Setup Instructions
 
 ## Step 1: Create a virtual environment
 
@@ -74,7 +74,7 @@ pip install dask[complete] dask-ml scikit-learn numpy pandas matplotlib
 
 ---
 
-#6. Data Generation
+# 6. Data Generation
 
 The dataset is generated programmatically using **Dask arrays** with:
 
@@ -86,7 +86,7 @@ This approach avoids storing large data files and ensures reproducibility on any
 
 ---
 
-#7. How to Run the Project
+# 7. How to Run the Project
 
 ## 1. Run Locally
 
@@ -128,7 +128,7 @@ python run_cluster.py
 
 ---
 
-#8. Visualization
+# 8. Visualization
 
 Cluster results are visualized using **Matplotlib**.
 
@@ -140,7 +140,7 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-#9. Results and Observations
+# 9. Results and Observations
 
 * scikit-learn performs well on smaller datasets
 * Dask enables parallel execution and scalability
@@ -148,7 +148,7 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-#10. Key Notes
+# 10. Key Notes
 
 * No raw dataset files are included
 * Data is generated dynamically at runtime
@@ -157,7 +157,7 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 ---
 
-#11. Conclusion
+# 11. Conclusion
 
 This project demonstrates how **Dask** can be used to scale traditional machine learning algorithms like **k-means clustering**.
 By leveraging parallel and distributed computing, Dask enables efficient processing of large datasets while maintaining clean, reusable, and reproducible code.
