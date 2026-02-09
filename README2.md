@@ -5,11 +5,11 @@
 
 # 1. Project Overview
 
-> This project shows how k-means clustering can be applied to large datasets using Dask. Normally, k-means runs on a single machine, which can become slow or inefficient as the dataset size increases. Dask addresses this limitation by enabling parallel computation across multiple CPU cores or machines, improving performance for large-scale data processing.
->
-> In this project, k-means clustering is implemented using both scikit-learn and Dask, and their performance is compared to highlight the scalability benefits of Dask. The project also includes visualizations of the clusters to make the results easy to understand.
->
-> To keep the project simple and easy to run, the dataset is generated automatically at runtime. This removes the need for large data files and allows anyone to run the project on their system without additional setup.
+This project shows how k-means clustering can be applied to large datasets using Dask. Normally, k-means runs on a single machine, which can become slow or inefficient as the dataset size increases. Dask addresses this limitation by enabling parallel computation across multiple CPU cores or machines, improving performance for large-scale data processing.
+
+In this project, k-means clustering is implemented using both scikit-learn and Dask, and their performance is compared to highlight the scalability benefits of Dask. The project also includes visualizations of the clusters to make the results easy to understand.
+
+To keep the project simple and easy to run, the dataset is generated automatically at runtime. This removes the need for large data files and allows anyone to run the project on their system without additional setup.
 
 
 ---
@@ -159,9 +159,9 @@ To maintain clarity, only a subset of the dataset is plotted.
 
 # 11. Conclusion
 
-> This project demonstrates how Dask can be used to scale traditional machine learning algorithms such as k-means clustering. By using parallel and distributed computing, Dask allows the algorithm to efficiently process large datasets that may be slow or difficult to handle on a single machine.
->
-> The project highlights how Dask improves performance and scalability while keeping the code clean, reusable, and easy to understand. It also shows how distributed execution can be applied without changing the core logic of the algorithm, making it practical for real-world data processing tasks. Overall, this project illustrates how Dask enables efficient and reproducible machine learning workflows for large-scale data.
+This project demonstrates how Dask can be used to scale traditional machine learning algorithms such as k-means clustering. By using parallel and distributed computing, Dask allows the algorithm to efficiently process large datasets that may be slow or difficult to handle on a single machine.
+
+The project highlights how Dask improves performance and scalability while keeping the code clean, reusable, and easy to understand. It also shows how distributed execution can be applied without changing the core logic of the algorithm, making it practical for real-world data processing tasks. Overall, this project illustrates how Dask enables efficient and reproducible machine learning workflows for large-scale data.
 
 
 ---
