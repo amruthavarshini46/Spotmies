@@ -1,8 +1,16 @@
-import pandas as pd
+import dask.array as da
 
-# Load dataset
-df = pd.read_csv("synthetic_online_communities_2025.csv")
+def generate_dataset(
+    total_samples=500_000,
+    total_features=2,
+    chunk_size=100_000
+):
+    dataset = da.random.random(
+        size=(total_samples, total_features),
+        chunks=(chunk_size, total_features)
+    )
+    return dataset
 
-print("Dataset shape:", df.shape)
-print("\nColumn types:\n", df.dtypes)
-print("\nFirst 5 rows:\n", df.head())
+if __name__ == "__main__":
+    data = generate_dataset()
+    print(data)

@@ -1,22 +1,14 @@
 import matplotlib.pyplot as plt
 
-# ✅ Read times from files (PATH-BASED)
-with open("sklearn_time.txt", "r") as f:
-    sk_time = float(f.read())
+def plot_clusters(dataset, labels, centers):
+    dataset = dataset.compute() if hasattr(dataset, "compute") else dataset
 
-with open("dask_time.txt", "r") as f:
-    dask_time = float(f.read())
+    plt.figure(figsize=(7, 7))
+    plt.scatter(dataset[:, 0], dataset[:, 1], c=labels, s=1, cmap="viridis")
+    plt.scatter(centers[:, 0], centers[:, 1], c="black", s=200, marker="X")
 
-methods = ["Scikit-learn", "Dask"]
-times = [sk_time, dask_time]
+    plt.xlabel("Feature 1", fontweight="bold", fontsize=13)
+    plt.ylabel("Feature 2", fontweight="bold", fontsize=13)
+    plt.title("Visualization of Clusters", fontweight="bold", fontsize=14)
 
-plt.figure(figsize=(6, 4))
-plt.bar(methods, times)
-plt.ylabel("Execution Time (seconds)")
-plt.title("K-Means Performance Comparison")
-
-# Add labels
-for i, v in enumerate(times):
-    plt.text(i, v, f"{v:.2f}s", ha="center", va="bottom")
-
-plt.show()
+    plt.show()
