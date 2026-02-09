@@ -27,7 +27,7 @@ This means no large data files are needed, and anyone can run the project on the
 4. NumPy and Pandas for data handling
 5. Matplotlib for visualization
 
-'''
+```
 Project Structure
 
 ├── data_generation.py        # Generates synthetic dataset
@@ -38,9 +38,10 @@ Project Structure
 ├── run_local.py              # Local execution using Dask
 ├── run_cluster.py            # Cluster-aware execution
 └── README.md                 # Project documentation
-'''
+```
 # Setup Instructions
 Step 1: Create a virtual environment
   i havent
    
+
 
